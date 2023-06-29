@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Expenses chart component</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <main class="spending-form">
+    <div class="spending-form-container">
+      <div class="spending-form-content">
+
+
+          <!-- Top form -->
+
+        <div class="top-spending-content">
+          <div class="total-spent-container">
+            <p class="font-style-light">My Balance</p>
+            <p><span class="balance-style">$921.48</span></p>
+          </div>
+
+          <div class="logo-container">
+            <img src="/images/logo.svg" alt="logo">
+          </div>
+        </div>
+
+
+          <!-- spending form -->
+        <div class="bottom-spending-content">
+
+          <div class="spending-title">
+            <p class="font-style-black">Spending - Last 7 days</p>
+          </div>
+
+          <div class="spending-chart-contain">
+            <div class="day-spending">
+              <!-- <span class="spent-per-day" data-tooltip="$43.00"></span> -->
+              <div class="column amount-spent-days monday" data-tooltip="$43.00"></div>
+              <p class="day">mon</p>
+            </div>
+
+            <div class="day-spending">
+              <!-- <span class="spent-per-day">$54.00</span> -->
+              <div class="column amount-spent-days tuesday" data-tooltip="$12.00"></div>
+              <p class="day">tue</p>
+            </div>
+
+            <div class="day-spending">
+              <!-- <span class="spent-per-day-wed">$12.00</span> -->
+              <div class="column amount-spent-days wednesday" id="most-spent-style" data-tooltip="$23.00"></div>
+              <p class="day">wed</p>
+            </div>
+
+            <div class="day-spending">
+              <!-- <span class="spent-per-day-thur">$23.00</span> -->
+              <div class="column amount-spent-days thursday" data-tooltip="$75.00"></div>
+              <p class="day">thur</p>
+            </div>
+
+            <div class="day-spending">
+              <!-- <span class="spent-per-day-fri">$22.00</span> -->
+              <div class="column amount-spent-days friday" data-tooltip="$12.00"></div>
+              <p class="day">fri</p>
+            </div>
+
+            <div class="day-spending">
+              <!-- <span class="spent-per-day-sat">$92.00</span> -->
+              <div class="column amount-spent-days saturday" data-tooltip="$13.00"></div>
+              <p class="day">sat</p>
+            </div>
+
+            <div class="day-spending">
+              <!-- <span class="spent-per-day-sun">$21.00</span> -->
+              <div class="column amount-spent-days sunday" data-tooltip="$3.00"></div>
+              <p class="day">sun</p>
+            </div>
+          </div>
+
+
+          <div class="line-sep"></div>
+
+          <div class="total-spent-contain">
+            <div class="total-spent">
+              <p class="font-style-medium">Total this month</p>
+              <p><span class="total-spent-style">$478.31</span></p>
+            </div>
+          
+          
+            <div class="rate-container">
+              <p class="rate-change">+2.4%</p>
+              <p class="font-style-medium">from last month</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="/script.js"></script>
+</body>
+</html>
